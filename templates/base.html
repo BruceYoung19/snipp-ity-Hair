@@ -1,0 +1,24 @@
+<html>
+
+<link rel="stylesheet" href="{{ url_for('static',filename='style.css')}}">
+<body>
+
+    <!-- Top tool for the logo + Account -->
+    <div class="top-tool">
+      <div class="top-left">
+        <h1>BRAND TEXT</h1>
+      </div>
+      <div class="top-right">
+        <p>LOGIN<p>
+      </div>
+    </div>
+
+    <!--Navigation bar for each setting -->
+    <div class="nav-bar">
+      <a href=" url">HOME</a>
+      <a href="{{ url_for('pricing')}}">PRICING</a>
+      <a href="{{ url_for('about')}}">ABOUT</a>
+    </div>
+
+</body>
+</html>
