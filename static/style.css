@@ -1,38 +1,47 @@
-body {
-  margin: 0;
-  height: 60vh; /* Full screen height */
-  display: flex;
-  justify-content: center; /* center horizontally */
-  align-items: center;     /* center vertically */
+body{
+        font-family: sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+.header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
 }
 
-.top-left,
-.top-right {
-  position:absolute;
-  top: 10px;
-  padding: 10px 15px;
-  color: black;
-  border-radius: 5px;
+.header .brand-text {
+      font-size: 24px;
+      font-weight: bold;
 }
 
-.top-left {
-  left: 10px;
+.header .login {
+      font-size: 16px;
+    }
+
+.main-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 80vh; /* This helps center the content vertically */
+      text-align: center;
+}
+        
+.main-content .navigation a {
+      text-decoration: none;
+      color: black;
+      font-size: 18px;
+      margin: 0 10px;
 }
 
-.top-right {
-  right: 10px;
-}
-    
-.nav-bar{
-     text-align:center;
-     margin-bottom:10px;
+.main-content .navigation {
+      font-weight: bold;
+      margin-bottom: 5px;
 }
 
-a{
-  color:black;
-  text-decoration: none;
-  margin-right:6px;
-  font-weight:bold;
+.main-content .about-text {
+      font-size: 16px;
+      margin-top: 0;
 }
-
-
