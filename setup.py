@@ -4,7 +4,7 @@ import os
 # TODO: May need to make a user via the CLI
 # This is for setting up the json file.
 
-DATA_FILE = 'setup.json'
+DATA_FILE = 'static/json/setup.json'
 
 def save_json(data):
     with open(DATA_FILE,'w') as f:
@@ -22,7 +22,7 @@ def create_documentation_for_business():
     about = input("About the Company:")
 
     data = {
-        "Brand": brand
+        "Brand": brand,
         "About": about
             }
     
@@ -34,14 +34,15 @@ def menu():
         print("1.Add Documentation")
         print("2.Exit")
 
-        choice = input("Choose an Option:").strip
+        choice = input("Choose an Option:").strip()
 
         if choice == '1':
             create_documentation_for_business()
         elif choice == '2':
             print("Exiting")
+            break
         else:
             print("Incorrect Input")
 
-if __name__ = '__main__':
+if __name__ == '__main__':
     menu()
