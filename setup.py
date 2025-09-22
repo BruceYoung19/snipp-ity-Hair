@@ -2,8 +2,8 @@ import json
 import os
 
 # TODO: May need to make a user via the CLI
-# This is for setting up the json file.
 
+# This is for setting up the json file.
 DATA_FILE = 'static/json/setup.json'
 
 def save_json(data):
