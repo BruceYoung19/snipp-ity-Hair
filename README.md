@@ -10,10 +10,10 @@ Track income and expenses to manage finances.
 Allow users to customize and modify the system to suit their workflow.
 
 ### Tech Stack
-Python – Backend logic and data processing.
-JavaScript – Frontend interactivity and dynamic calendar/event handling.
-HTML & CSS – Structure and styling of the user interface.
-SQLite – Lightweight database for storing appointments, clients, and expenses.
+- Python – Backend logic and data processing.
+- JavaScript – Frontend interactivity and dynamic calendar/event handling.
+- HTML & CSS – Structure and styling of the user interface.
+- SQLite – Lightweight database for storing appointments, clients, and expenses.
 
 ### Features (Planned)
 Monthly calendar view with event tracking.
