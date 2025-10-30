@@ -7,7 +7,7 @@ app = Flask(__name__)
 @app.route('/')
 def base():
     file_path = os.path.join('static/json','setup.json')
-    load_json_data(file_path)
+    #load_json_data(file_path)
     return render_template('home.html')
 
 @app.route('/pricing')

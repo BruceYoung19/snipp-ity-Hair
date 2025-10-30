@@ -7,6 +7,8 @@
     
   <head>
 <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css')}}">
+<script sr="{{ url_for('static',filename='dateScript.js') }}"></script>
+
 
 <body>
 
@@ -26,8 +28,8 @@
         <p class="about-text"></p>
         {% endblock %}
     </main>
+    <div id="date_item"></div>
 
 </body>
-
 
 </html>
