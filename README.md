@@ -9,7 +9,7 @@ Organize haircut appointments and schedules.
 Track income and expenses to manage finances.
 Allow users to customize and modify the system to suit their workflow.
 
-### Tech Stack
+### Tech Stack - (Currently being reworked due to the scaling and maintance)
 - Python – Backend logic and data processing.
 - JavaScript – Frontend interactivity and dynamic calendar/event handling.
 - HTML & CSS – Structure and styling of the user interface.
