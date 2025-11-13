@@ -1,4 +1,77 @@
 <html>
-  <title>{% block title %} title for my app {% endblock %} </title>
-  <p> {% block content %} this is the paragraph {% endblock %} </p>
+<title>{% block title %} title for my app {% endblock %} </title>
+<style>
+    body {
+        background-color: #f5f5f5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+        font-family: monospace, sans-serif;
+    }
+
+
+    .navigation-board {
+        background-color: #ffffff;
+        padding: 15px 20px;
+        border: 1px solid rgba(0, 0, 0, 0.05);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        border-radius: 2px;
+    }
+
+    .navigation-board ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 40px;
+    }
+
+    .navigation-board li a {
+        text-decoration: none;
+        color: #333;
+        font-size: 16px;
+        padding-bottom: 5px;
+        transition: color 0.3s ease;
+    }
+
+    .navigation-board li.current a {
+        border-bottom: 1px solid #333;
+        font-weight: bold;
+    }
+
+    .navigation-board li a:hover {
+        color: #fff;
+    }
+
+    #top-container {
+        position: fixed;
+        top: 10;
+        width: auto;
+    }
+
+    #website-container{
+        align-items: center;
+    }
+
+</style>
+
+<div id="website-container">
+    <div id="top-container">
+        <nav class="navigation-board">
+            <ul>
+                <li class="current"><a href="#">Home</a></li>
+                <li><a href="#">Haircuts</a></li>
+                <li><a href="#">Contacts</a></li>
+                <li><a href="#">Login</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="bottom-container">
+        {% block content %} this is the paragraph {% endblock %} 
+    </div>
+</div>
+
+
 </html>
