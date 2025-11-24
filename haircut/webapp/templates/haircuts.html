@@ -1,6 +1,16 @@
 {% extends "base.html" %} 
-{% block title %} Snip that Hair! {% endblock %}
+
+{% block title %} 
+Choose Your Cut!
+{% endblock %}
+
 {% block content  %}
 
-<p> haircuts</p>
+{% load static %}
+<link rel="stylesheet" href="{% static 'webapp/haircuts.css' %}">
+
+<div id="Haircut-container">
+    <div id="list-of-cuts"></div>
+</div>
+
 {% endblock %}
