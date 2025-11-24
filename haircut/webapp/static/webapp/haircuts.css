@@ -1,0 +1,6 @@
+#haircut-container{
+    background-color: white;
+    width: 1000px;
+    height: 700px;
+    display: flex;
+}

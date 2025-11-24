@@ -1,1 +1,24 @@
-<p> Login page</p>
+{% extends "base.html" %} 
+
+{% block title %} 
+login Page 
+{% endblock %}
+
+{% block content  %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'webapp/login.css' %}">
+<div id="content-box">
+
+    <form >
+        <label for="User">User Name :</label><br>
+        <input type="text" id="user" name="username" value="email"><br>
+        <label for="Password">Password :</label><br>
+        <input type="text" id="password" name="password" value="password"><br><br>
+        <input type="submit" value="Submit">
+      </form> 
+
+    <p> Don't have an account with us?</p> <br>
+    <a href="{% url 'register' %}">Register Now</a>
+    
+</div>
+{% endblock %}

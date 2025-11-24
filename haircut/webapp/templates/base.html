@@ -1,14 +1,18 @@
 {% load static %}
 
 <html>
-<title>{% block title %} title for my app {% endblock %} </title>
+<title>
+    {% block title %} 
+    Home Page 
+    {% endblock %} 
+</title>
 <link rel="stylesheet" href="{% static 'webapp/base.css' %}">
 
 <div id="website-container">
     <div id="top-container">
         <nav class="navigation-board">
             <ul>
-                <li class="current"><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'home' %}">Home</a></li>
                 <li><a href="{% url 'haircuts' %}">Haircuts</a></li>
                 <li><a href="{% url 'contact' %}">Contacts</a></li>
                 <li><a href="{% url 'login' %}">Login</a></li>
@@ -16,7 +20,9 @@
         </nav>
     </div>
     <div id="bottom-container">
-        {% block content %} this is the paragraph {% endblock %} 
+        {% block content %} 
+        this is the paragraph 
+        {% endblock %} 
     </div>
 </div>
 

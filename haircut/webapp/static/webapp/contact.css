@@ -1,0 +1,14 @@
+#content-box{
+    background-color: white;
+    width: 1000px;
+    height: 700px;
+    display: flex;
+}
+
+#content{
+    text-align: center;
+    justify-content: center;
+    display: block;
+    height: 200px;
+    width: 1000px;
+}
